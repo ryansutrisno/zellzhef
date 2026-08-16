@@ -1,0 +1,27 @@
+---
+import { processSteps } from '../../data/copy';
+---
+
+<section class="bg-surface-warm py-16 border-y border-circuit-gray overflow-hidden" id="proses-kerja">
+  <div class="px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+    <h2 class="text-headline-md font-headline-md text-on-background mb-12 text-center animate-on-scroll">Proses Kerja Kami</h2>
+    <div class="flex flex-col md:flex-row gap-8 relative">
+      <!-- Line separator md -->
+      <div class="hidden md:block absolute top-6 left-[16.66%] right-[16.66%] h-px bg-circuit-gray z-0"></div>
+      <div class="hidden md:block absolute top-6 left-[16.66%] h-0.5 bg-primary z-0 transition-all duration-1000 w-0" id="progress-line"></div>
+      
+      {processSteps.map((step, index) => {
+        const isLast = index === processSteps.length - 1;
+        return (
+          <div class={`flex-1 flex flex-col items-center text-center relative z-10 animate-on-scroll stagger-${index} group`}>
+            <div class={`w-12 h-12 rounded-full ${isLast ? 'bg-primary-container text-on-primary shadow-md group-hover:bg-primary' : 'bg-surface border border-circuit-gray text-primary shadow-sm group-hover:border-primary group-hover:bg-primary-fixed/20'} flex items-center justify-center text-label-mono font-label-mono font-bold mb-4 group-hover:scale-110 transition-all duration-300`}>
+              {step.id}
+            </div>
+            <h3 class="text-headline-md font-headline-md text-on-surface mb-2">{step.title}</h3>
+            <p class="text-body-md font-body-md text-on-surface-variant">{step.description}</p>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</section>

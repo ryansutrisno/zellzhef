@@ -1,0 +1,48 @@
+---
+import { brand, nav } from '../../data/copy';
+---
+
+<!-- Top Navigation (Desktop) -->
+<nav class="hidden md:flex fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant">
+  <div class="w-full flex justify-between items-center px-margin-desktop h-16 max-w-max-width mx-auto">
+    <div class="text-headline-md font-headline-md font-bold text-primary hover:scale-105 transition-transform cursor-pointer">
+      {brand.name}
+    </div>
+    <div class="flex gap-gutter">
+      <a class="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#layanan">Services</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#produk">Products</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#proses-kerja">About Us</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#lokasi">Location</a>
+    </div>
+    <a class="bg-primary-container text-on-primary px-4 py-2 rounded text-label-caps font-label-caps hover:opacity-90 hover:scale-105 transition-all shadow-md hover:shadow-lg" href={`https://wa.me/6281234567890?text=${encodeURIComponent(nav.waMessage)}`}>
+      {nav.ctaLabel}
+    </a>
+  </div>
+</nav>
+
+<!-- Top Navbar (Mobile Brand) -->
+<nav class="md:hidden fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant flex justify-center items-center h-16">
+  <div class="text-headline-md font-headline-md font-bold text-primary">
+    {brand.name}
+  </div>
+</nav>
+
+<!-- Bottom Navigation (Mobile) -->
+<nav class="flex md:hidden fixed bottom-0 w-full z-50 bg-surface-container shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] border-t border-outline-variant justify-around items-center py-2 pb-safe">
+  <a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant hover:text-primary hover:bg-surface-container-high transition-all active:scale-95 px-2 py-1 rounded" href="#layanan">
+    <span class="material-symbols-outlined">build</span>
+    <span class="text-label-caps font-label-caps mt-1">Services</span>
+  </a>
+  <a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant hover:text-primary hover:bg-surface-container-high transition-all active:scale-95 px-2 py-1 rounded" href="#produk">
+    <span class="material-symbols-outlined">memory</span>
+    <span class="text-label-caps font-label-caps mt-1">Shop</span>
+  </a>
+  <a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant hover:text-primary hover:bg-surface-container-high transition-all active:scale-95 px-2 py-1 rounded" href={`https://wa.me/6281234567890?text=${encodeURIComponent(nav.waMessage)}`}>
+    <span class="material-symbols-outlined">chat</span>
+    <span class="text-label-caps font-label-caps mt-1">WhatsApp</span>
+  </a>
+  <a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant hover:text-primary hover:bg-surface-container-high transition-all active:scale-95 px-2 py-1 rounded" href="#lokasi">
+    <span class="material-symbols-outlined">location_on</span>
+    <span class="text-label-caps font-label-caps mt-1">Contact</span>
+  </a>
+</nav>

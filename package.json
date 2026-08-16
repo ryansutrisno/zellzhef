@@ -1,0 +1,24 @@
+{
+  "name": "zellzhef",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "ProFix Repair & Hardware | Solusi Cepat Perbaikan Laptop",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^3.1.1",
+    "@astrojs/tailwind": "^5.1.4",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "astro": "^5.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3"
+  }
+}

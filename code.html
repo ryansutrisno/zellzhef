@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html lang="id" style="scroll-behavior: smooth;"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ProFix Repair &amp; Hardware | Solusi Cepat Perbaikan Laptop</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&amp;family=Inter:wght@400;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#a83b00",
+                        "circuit-gray": "#E0E2E6",
+                        "on-primary-fixed-variant": "#0040a1",
+                        "on-secondary-fixed": "#1b1b1c",
+                        "on-primary-fixed": "#001847",
+                        "on-primary-container": "#ced9ff",
+                        "primary": "#0041a2",
+                        "surface-dim": "#d9d9e4",
+                        "inverse-on-surface": "#f0f0fb",
+                        "surface-container-lowest": "#ffffff",
+                        "electric-blue": "#2073F7",
+                        "tertiary": "#802b00",
+                        "inverse-primary": "#b2c5ff",
+                        "outline-variant": "#c3c6d6",
+                        "primary-fixed": "#dae2ff",
+                        "on-error": "#ffffff",
+                        "surface-container": "#ededf8",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#0b57d0",
+                        "error-container": "#ffdad6",
+                        "on-secondary-container": "#636262",
+                        "primary-fixed-dim": "#b2c5ff",
+                        "on-secondary-fixed-variant": "#474746",
+                        "on-surface": "#191b23",
+                        "on-tertiary-container": "#ffcfbe",
+                        "inverse-surface": "#2e3038",
+                        "on-error-container": "#93000a",
+                        "surface-container-low": "#f3f3fd",
+                        "on-tertiary-fixed": "#370e00",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#e5e2e1",
+                        "secondary": "#5f5e5e",
+                        "surface-bright": "#faf8ff",
+                        "surface-variant": "#e1e2ec",
+                        "success-mint": "#C4EED0",
+                        "surface-container-highest": "#e1e2ec",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#ffdbce",
+                        "secondary-container": "#e2dfde",
+                        "surface-container-high": "#e7e7f2",
+                        "on-background": "#191b23",
+                        "outline": "#737785",
+                        "tertiary-fixed-dim": "#ffb599",
+                        "on-tertiary-fixed-variant": "#7f2b00",
+                        "background": "#faf8ff",
+                        "surface": "#faf8ff",
+                        "surface-warm": "#F2EFE9",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#424654",
+                        "surface-tint": "#0856cf"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "margin-mobile": "16px",
+                        "max-width": "1280px",
+                        "gutter": "24px",
+                        "margin-desktop": "40px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "headline-xl": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "body-md": ["Inter"],
+                        "label-mono": ["JetBrains Mono"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "label-caps": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-mono": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700" }]
+                    },
+                    "animation": {
+                        "float": "float 6s ease-in-out infinite",
+                    },
+                    "keyframes": {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .stagger-1 { transition-delay: 100ms; }
+        .stagger-2 { transition-delay: 200ms; }
+        .stagger-3 { transition-delay: 300ms; }
+        .stagger-4 { transition-delay: 400ms; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col pt-16 md:pb-0 pb-16">
+<!-- Top Navigation (Desktop) -->
+<nav class="hidden md:flex fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant justify-between items-center px-margin-desktop h-16 max-w-max-width mx-auto">
+<div class="text-headline-md font-headline-md font-bold text-primary hover:scale-105 transition-transform cursor-pointer">
+            ProFix Hardware
+        </div>
+<div class="flex gap-gutter"><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#layanan">Services</a><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#produk">Products</a><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#proses-kerja">About Us</a><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#lokasi">Location</a></div>
+<a class="bg-primary-container text-on-primary px-4 py-2 rounded text-label-caps font-label-caps hover:opacity-90 hover:scale-105 transition-all shadow-md hover:shadow-lg" href="https://wa.me/6281234567890">Contact Us</a>
+</nav>
+<!-- Top Navbar (Mobile Brand) -->
+<nav class="md:hidden fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant flex justify-center items-center h-16">
+<div class="text-headline-md font-headline-md font-bold text-primary">
+        ProFix Hardware
+    </div>
+</nav>
+<!-- Bottom Navigation (Mobile) -->
+<nav class="flex md:hidden fixed bottom-0 w-full z-50 bg-surface-container shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] border-t border-outline-variant justify-around items-center py-2 pb-safe"><a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant hover:text-primary hover:bg-surface-container-high transition-all active:scale-95 px-2 py-1 rounded" href="#layanan"><span class="material-symbols-outlined">build</span><span class="text-label-caps font-label-caps mt-1">Services</span></a><a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant hover:text-primary hover:bg-surface-container-high transition-all active:scale-95 px-2 py-1 rounded" href="#produk"><span class="material-symbols-outlined">memory</span><span class="text-label-caps font-label-caps mt-1">Shop</span></a><a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant hover:text-primary hover:bg-surface-container-high transition-all active:scale-95 px-2 py-1 rounded" href="https://wa.me/6281234567890"><span class="material-symbols-outlined">chat</span><span class="text-label-caps font-label-caps mt-1">WhatsApp</span></a><a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant hover:text-primary hover:bg-surface-container-high transition-all active:scale-95 px-2 py-1 rounded" href="#lokasi"><span class="material-symbols-outlined">location_on</span><span class="text-label-caps font-label-caps mt-1">Contact</span></a></nav>
+<main class="flex-grow pt-16 md:pt-0">
+<!-- Hero Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-16 md:py-24 max-w-max-width mx-auto flex flex-col md:flex-row items-center gap-12 overflow-hidden">
+<div class="flex-1 space-y-6 animate-on-scroll">
+<h1 class="text-headline-lg-mobile md:text-headline-xl font-headline-xl text-on-background leading-tight">Solusi Cepat Perbaikan Laptop &amp; Hardware</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant">Layanan teknis profesional, terpercaya, dan transparan untuk perangkat Anda. Kami mengembalikan performa optimal hardware Anda dengan presisi.</p>
+<div class="pt-4">
+<a class="inline-flex items-center justify-center bg-primary-container text-on-primary px-6 py-3 rounded text-label-caps font-label-caps hover:bg-primary transition-all hover:scale-105 shadow-md hover:shadow-lg gap-2" href="https://wa.me/6281234567890">
+<span class="material-symbols-outlined text-xl">chat</span>
+                        Konsultasi via WhatsApp
+                    </a>
+</div>
+</div>
+<div class="flex-1 w-full relative animate-on-scroll stagger-1">
+<div class="aspect-video bg-surface-warm rounded border border-circuit-gray overflow-hidden relative shadow-lg group animate-float">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A modern, high-tech computer repair workbench, clean and minimalist. Top-down view of tools and components laid out neatly." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCskxu0qzCQqMNEY7q7Xb2ZA42RBfCXSahl8ON1oPKH4RxxeDiVwNGioq7xQjEt_JJQFBtBfhFmCGkbsye7NAC1XHFK7-SeZAaI7sIIcKW5BcFE-bwY6WGubbUpyF_0b6H3rfk-KCogj1JiXn_CHcGqKGgw70yWz_Z7TxT43hNLHzgucBkUHeD5vpXq6ABDljnJmUPXQ9dKQbL1GjztWf3Mac1gL4w7QHxEvUkWde-aaHJy0MXPl3Lv"/>
+<div class="absolute inset-0 border border-primary/20 m-4 rounded pointer-events-none transition-transform duration-500 group-hover:scale-[0.98]"></div>
+</div>
+<!-- Decorative elements -->
+<div class="absolute -z-10 -top-10 -right-10 w-32 h-32 bg-primary-fixed-dim/30 rounded-full blur-2xl animate-pulse"></div>
+<div class="absolute -z-10 -bottom-10 -left-10 w-40 h-40 bg-tertiary-fixed-dim/30 rounded-full blur-2xl animate-pulse" style="animation-delay: 1s;"></div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="bg-surface-warm py-16 border-y border-circuit-gray" id="layanan">
+<div class="px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<h2 class="text-headline-md font-headline-md text-on-background mb-8 text-center animate-on-scroll">Layanan Teknis Kami</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Service 1 -->
+<div class="bg-surface p-6 rounded border border-circuit-gray hover:shadow-xl hover:-translate-y-2 hover:border-primary/30 transition-all duration-300 animate-on-scroll stagger-1">
+<div class="w-12 h-12 rounded bg-primary-fixed/50 flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">laptop_mac</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Service Laptop</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Perawatan dan perbaikan menyeluruh untuk berbagai merk laptop.</p>
+</div>
+<!-- Service 2 -->
+<div class="bg-surface p-6 rounded border border-circuit-gray hover:shadow-xl hover:-translate-y-2 hover:border-primary/30 transition-all duration-300 animate-on-scroll stagger-2">
+<div class="w-12 h-12 rounded bg-primary-fixed/50 flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">aspect_ratio</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Ganti LCD</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Penggantian layar pecah atau bermasalah dengan panel berkualitas.</p>
+</div>
+<!-- Service 3 -->
+<div class="bg-surface p-6 rounded border border-circuit-gray hover:shadow-xl hover:-translate-y-2 hover:border-primary/30 transition-all duration-300 animate-on-scroll stagger-3">
+<div class="w-12 h-12 rounded bg-primary-fixed/50 flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">memory</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Upgrade RAM/SSD</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Tingkatkan performa dan kecepatan loading sistem Anda.</p>
+</div>
+<!-- Service 4 -->
+<div class="bg-surface p-6 rounded border border-circuit-gray hover:shadow-xl hover:-translate-y-2 hover:border-primary/30 transition-all duration-300 animate-on-scroll stagger-4">
+<div class="w-12 h-12 rounded bg-primary-fixed/50 flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">developer_board</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Service Motherboard</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Perbaikan tingkat komponen mikro untuk masalah mati total.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Products (Bento Grid) -->
+<section class="py-16 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto" id="produk">
+<div class="flex justify-between items-end mb-8 animate-on-scroll">
+<h2 class="text-headline-md font-headline-md text-on-background">Hardware Unggulan</h2>
+<span class="text-label-mono font-label-mono text-secondary px-3 py-1 bg-surface-container rounded-full shadow-inner">STOCK_READY</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-4">
+<!-- Large Item 1 -->
+<div class="md:col-span-2 bg-surface border border-circuit-gray rounded overflow-hidden flex flex-col md:flex-row group hover:shadow-xl hover:-translate-y-1 transition-all duration-300 animate-on-scroll cursor-pointer">
+<div class="w-full md:w-1/2 h-48 md:h-full bg-surface-dim relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYeR4PNg1EXW-U2mBtYaVzVZ-_UW62CltXQRgbWROl5Qxt2F4eRxt3c13lWOBk04dS_mEOKzVTGz3BaocWyo5a4jxbR-8-paymuUMFpjtfhp7SmPEvotmnk7eIID1EfvSafUYV3e_oY2Q2keFru_jtGE6wOlGL4PaFJ0kKhREwcMQ6Vg63fHgHB_r41CeoJiE9vi7KVH1HlaGoEEatKN9RqXsLZgNuk6sd9fu0Dyh6csEnVKWj4Yl3BrThEfKIBJ9yMg"/>
+</div>
+<div class="p-6 flex flex-col justify-center flex-1 bg-surface group-hover:bg-surface-container-lowest transition-colors">
+<span class="inline-block bg-success-mint text-on-surface px-2 py-1 rounded text-label-caps font-label-caps w-max mb-3 shadow-sm">IN STOCK</span>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2 group-hover:text-primary transition-colors">SSD NVMe Imperion</h3>
+<p class="text-label-mono font-label-mono text-on-surface-variant mb-4">SPEC: M.2 NVMe / High Speed</p>
+<button class="text-primary font-label-caps text-label-caps tracking-wider border border-primary/20 hover:border-primary hover:bg-primary/5 w-max px-4 py-2 rounded transition-all active:scale-95">LIHAT DETAIL</button>
+</div>
+</div>
+<!-- Small Item 1 -->
+<div class="bg-surface border border-circuit-gray rounded overflow-hidden flex flex-col group hover:shadow-xl hover:-translate-y-1 transition-all duration-300 animate-on-scroll stagger-1 cursor-pointer">
+<div class="h-40 bg-surface-dim relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkfSzE6ZHCkVKvlkwtAlPS7y9FSYHPwaejWoo94Vr1mk86y4iyfGoWiPcba54SEEqUV743fTp4mWg2T4SsmTOKhf76GaMTHfUrAp3Zir1o9VXdS4PjifiWMeW-Pt0uhmDKhHlLGCNm0AWOp-XIWlYBHopSUCEEa7E2aXr4gxpgAS-8XDcav6ETudj99iRBKz3FKIME6Hg9tq6xYsWOcMgsbunwdQXLBbOr6xZRWcw6Ab6R-3kcu30u2B318ucX19ZKQA"/>
+</div>
+<div class="p-4 flex-1 flex flex-col justify-between bg-surface group-hover:bg-surface-container-lowest transition-colors">
+<div>
+<h3 class="text-body-lg font-headline-md text-on-surface group-hover:text-primary transition-colors">SSD V-GeN Platinum</h3>
+<p class="text-label-mono font-label-mono text-on-surface-variant mt-1">SATA 2.5"</p>
+</div>
+</div>
+</div>
+<!-- Small Item 2 -->
+<div class="bg-surface border border-circuit-gray rounded overflow-hidden flex flex-col group hover:shadow-xl hover:-translate-y-1 transition-all duration-300 animate-on-scroll stagger-2 cursor-pointer">
+<div class="h-40 bg-surface-dim relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4OI0o373MBKsf1ejDzuCTE0WMUlAj_DjouQPr1ELXd94pmfNcMQMd9BvYFGGuW1Vprr5EvhvvP1yFFo3QHxwkSAi7uW-pSxEGSGM44k5MMGLyxdSao2l-MVAp2zzxtLV0XgF5jJG8ArChnvJs_BFySyHTDEhgQTT3Ti9OfZqyPqivaLXes_x_DGHJAvlvWeokp3dA0zJ1X3UCpiWtN3GP2lUDWoylCUCNYKapkKa6-5DaaRrZVLKyL2R0Jr-oYeCEUQ"/>
+</div>
+<div class="p-4 flex-1 flex flex-col justify-between bg-surface group-hover:bg-surface-container-lowest transition-colors">
+<div>
+<h3 class="text-body-lg font-headline-md text-on-surface group-hover:text-primary transition-colors">RAM Imperion</h3>
+<p class="text-label-mono font-label-mono text-on-surface-variant mt-1">DDR4 / High Performance</p>
+</div>
+</div>
+</div>
+<!-- Small Item 3 -->
+<div class="bg-surface border border-circuit-gray rounded overflow-hidden flex flex-col group hover:shadow-xl hover:-translate-y-1 transition-all duration-300 animate-on-scroll stagger-1 cursor-pointer">
+<div class="h-40 bg-surface-dim relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKuByZm7fNF5Van-xKstDTkgPZSnIc4a1fL24X56mSjzrfThLvTsI-fUKSjPa6RDPaHizthpwkJwlh3uOQcoaLlC9J0He6Jm9XusQd31tqTQxkoMICX0xZ4y_6meqCscar16zjOJx5nggqDECUzNxjIzm2deGq9eouz5RhuQ2JBXUPo9YYjGQ8rwyFPW0eYPkDDY8QzTHF913s0ek6VyLtIHkJwJoYlbT_Dadfj-1Wh77IszRBHqOfun_J90gQh4jO-Q"/>
+</div>
+<div class="p-4 flex-1 flex flex-col justify-between bg-surface group-hover:bg-surface-container-lowest transition-colors">
+<div>
+<h3 class="text-body-lg font-headline-md text-on-surface group-hover:text-primary transition-colors">Baterai Laptop Samsung</h3>
+<p class="text-label-mono font-label-mono text-on-surface-variant mt-1">OEM Replacement</p>
+</div>
+</div>
+</div>
+<!-- Small Item 4 -->
+<div class="bg-surface border border-circuit-gray rounded overflow-hidden flex flex-col group hover:shadow-xl hover:-translate-y-1 transition-all duration-300 animate-on-scroll stagger-2 cursor-pointer">
+<div class="h-40 bg-surface-dim relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBafo4FjIYDDR0t3zG4IIt9BoexXhzS-zVt7m52qFeMaLanYu15_9Q4wOL7SdEI1fEtSkJaZtT55i0aP4IN26Z-Ol83US8PQuR2r6d4j4r2o7BWaRuf-4F9chrrHUSfiT9OSy5JXIIrg7niMMj6ywMb4s4Nd7wQ8uRxv75tUhXvl2odcNNntQKdMboO-c_Av_NdrsYqaSvUzr6XpS5hRst-P6bW-BqhmXqTcp26lm8OW5PxHuR9egvqA7b8TRS318xYkg"/>
+</div>
+<div class="p-4 flex-1 flex flex-col justify-between bg-surface group-hover:bg-surface-container-lowest transition-colors">
+<div>
+<h3 class="text-body-lg font-headline-md text-on-surface group-hover:text-primary transition-colors">Baterai Xiaomi</h3>
+<p class="text-label-mono font-label-mono text-on-surface-variant mt-1">Original Part</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 flex flex-col md:flex-row gap-4 animate-on-scroll">
+<div class="flex-1 bg-surface border border-circuit-gray rounded p-4 flex items-center gap-4 hover:shadow-lg hover:border-primary/30 transition-all group cursor-pointer">
+<div class="w-16 h-16 shrink-0 rounded overflow-hidden bg-surface-dim">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_joYTbMfP5vpVFKb4paeU7s70fuavSjFg1ZzBCISII3vfCEQ1BwnEPNQ6z4qjnv41CECmemXS_dh4VVole5Pj-IOZWaR-MruNS13XxKiJDVSJYXwox5ukHRWDmT2y38yOMIRyKHSguVlVe_Fdg1d5LyaD8h5EG9MoY68W6Rk24Lt2y9wsPUkveU5-0MqxEMIuGSdkZQtqpQyDHDbfeJL7tye4-jejHNNH33RIJu5nYIh7bk2ELYmfBzwLuXgUTWRJ9Q"/>
+</div>
+<div>
+<h4 class="text-body-md font-headline-md group-hover:text-primary transition-colors">MacBook Repair</h4>
+<p class="text-label-mono font-label-mono text-secondary">Diagnostic &amp; Fix</p>
+</div>
+</div>
+<div class="flex-1 bg-surface border border-circuit-gray rounded p-4 flex items-center gap-4 hover:shadow-lg hover:border-primary/30 transition-all group cursor-pointer">
+<div class="w-16 h-16 shrink-0 rounded overflow-hidden bg-surface-dim">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAfJ8XnmLt4v49U41z_hMr8TumHjQxgR2_0nfO0cRJrfFCot19MWEPAcoT4r2M-2WA73v9x1LCE_eSb18_IE0djUYFjOa4VA6X4V3VtvTqK3HTFl8OwP2kWfq-GQmRDbXWhc41JVrJmHvcp0k8l6L4Q1KfN9gafTGnxVhVrIcfELqDCCvo_Qr_4uDbRq3Iphtg0Ki4ganrbuLLpTfWeK7WLeFPaqlB71aK4Tc8BujS-9y6N5_dHvFgP1t1rNHcgp9QeQ"/>
+</div>
+<div>
+<h4 class="text-body-md font-headline-md group-hover:text-primary transition-colors">iPad Repair</h4>
+<p class="text-label-mono font-label-mono text-secondary">Screen &amp; Battery</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="bg-surface-warm py-16 border-y border-circuit-gray overflow-hidden" id="proses-kerja">
+<div class="px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<h2 class="text-headline-md font-headline-md text-on-background mb-12 text-center animate-on-scroll">Proses Kerja Kami</h2>
+<div class="flex flex-col md:flex-row gap-8 relative">
+<!-- Line separator md -->
+<div class="hidden md:block absolute top-6 left-[16.66%] right-[16.66%] h-px bg-circuit-gray z-0"></div>
+<div class="hidden md:block absolute top-6 left-[16.66%] h-0.5 bg-primary z-0 transition-all duration-1000 w-0" id="progress-line"></div>
+<!-- Step 1 -->
+<div class="flex-1 flex flex-col items-center text-center relative z-10 animate-on-scroll group">
+<div class="w-12 h-12 rounded-full bg-surface border border-circuit-gray flex items-center justify-center text-label-mono font-label-mono text-primary font-bold mb-4 shadow-sm group-hover:scale-110 group-hover:border-primary group-hover:bg-primary-fixed/20 transition-all duration-300">01</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Diagnosa</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Pengecekan masalah secara menyeluruh dan estimasi biaya transparan.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex-1 flex flex-col items-center text-center relative z-10 animate-on-scroll stagger-1 group">
+<div class="w-12 h-12 rounded-full bg-surface border border-circuit-gray flex items-center justify-center text-label-mono font-label-mono text-primary font-bold mb-4 shadow-sm group-hover:scale-110 group-hover:border-primary group-hover:bg-primary-fixed/20 transition-all duration-300">02</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Perbaikan</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Eksekusi perbaikan oleh teknisi berpengalaman dengan sparepart berkualitas.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex-1 flex flex-col items-center text-center relative z-10 animate-on-scroll stagger-2 group">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-label-mono font-label-mono text-on-primary font-bold mb-4 shadow-md group-hover:scale-110 group-hover:bg-primary transition-all duration-300">03</div>
+<h3 class="text-headline-md font-headline-md text-on-surface mb-2">Selesai</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Pengujian akhir dan perangkat siap diambil dengan garansi servis.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact/Location Section -->
+<section class="py-16 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto" id="lokasi">
+<h2 class="text-headline-md font-headline-md text-on-background mb-8 animate-on-scroll">Lokasi &amp; Kontak</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface border border-circuit-gray rounded p-6 shadow-sm hover:shadow-lg transition-shadow duration-300 animate-on-scroll">
+<h3 class="text-headline-md font-headline-md text-on-surface mb-4">ProFix Repair &amp; Hardware</h3>
+<div class="space-y-4">
+<div class="flex items-start gap-3 group">
+<span class="material-symbols-outlined text-primary mt-1 group-hover:scale-110 group-hover:text-electric-blue transition-all">location_on</span>
+<p class="text-body-md font-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">
+                                Jl. Contoh Alamat No. 123,<br/>
+                                Kota, Provinsi, Kode Pos
+                            </p>
+</div>
+<div class="flex items-center gap-3 group">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 group-hover:text-electric-blue transition-all">schedule</span>
+<p class="text-body-md font-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">Senin - Sabtu: 09:00 - 18:00</p>
+</div>
+<div class="flex items-center gap-3 group">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 group-hover:text-electric-blue transition-all">phone</span>
+<p class="text-body-md font-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">+62 812-3456-7890</p>
+</div>
+</div>
+<button class="mt-6 w-full bg-surface-container-high text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed py-2 rounded font-label-caps text-label-caps transition-colors">LIHAT DI GOOGLE MAPS</button>
+</div>
+<div class="h-64 md:h-auto bg-surface-dim rounded border border-circuit-gray relative overflow-hidden group animate-on-scroll stagger-1" data-location="Indonesia">
+<!-- Map Placeholder -->
+<div class="absolute inset-0 flex items-center justify-center text-on-surface-variant flex-col bg-surface-warm transition-transform duration-700 group-hover:scale-105" data-alt="A clean, minimalist map rendering of a city area in light mode style, emphasizing professional location data." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuANiPpjBZo4K42GFXNAI6s-Rdt_Eo13wyoiXJ3DkPAI5OVU0cXYpucEQXCNZy6drFezjbE9RslCBXjz9pwY0WFuyHssZodGcdCxzT_NC_kCZK-PpxW-hO5_UPgBX7uOQr0bkFRd4OPfRnZJusuh9cchj8aGSbl7r287qpgjPcxq1da6oK4-lpKY8WUxez5meDhrStKpFeYuOUxnDgEGWsZVKCMbYpKZdjwPydiIydIHG9-DqoQeG6iF')">
+<div class="bg-surface/80 backdrop-blur p-4 rounded flex flex-col items-center shadow-lg group-hover:-translate-y-2 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl mb-2 text-primary">map</span>
+<span class="text-label-mono font-label-mono text-on-surface">MAP_DATA_AREA</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest w-full mt-auto border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 max-w-max-width mx-auto animate-on-scroll">
+<div class="col-span-1 md:col-span-2">
+<div class="text-headline-md font-headline-md font-bold text-primary mb-4">
+                    ProFix Repair &amp; Hardware
+                </div>
+<p class="text-body-md font-body-md text-on-surface-variant mb-4">© 2024 ProFix Repair &amp; Hardware. Professional Computer Solutions.</p>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="text-body-md font-headline-md text-on-surface mb-2">Legal</h4>
+<a class="text-body-md font-body-md text-on-surface-variant hover:underline hover:text-primary hover:translate-x-1 transition-all duration-200 w-max" href="#">Privacy Policy</a>
+<a class="text-body-md font-body-md text-on-surface-variant hover:underline hover:text-primary hover:translate-x-1 transition-all duration-200 w-max" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="text-body-md font-headline-md text-on-surface mb-2">Support</h4>
+<a class="text-body-md font-body-md text-on-surface-variant hover:underline hover:text-primary hover:translate-x-1 transition-all duration-200 w-max" href="#">Warranty Info</a>
+<a class="text-body-md font-body-md text-on-surface-variant hover:underline hover:text-primary hover:translate-x-1 transition-all duration-200 w-max" href="#">Support</a>
+</div>
+</div>
+</footer>
+<!-- WhatsApp Floating Action Button -->
+<a class="fixed bottom-20 md:bottom-8 right-4 md:right-8 bg-primary-container text-on-primary w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 hover:-translate-y-1 transition-all duration-300 z-50 animate-bounce" href="https://wa.me/6281234567890" style="animation-duration: 3s;">
+<span class="material-symbols-outlined text-3xl">chat</span>
+</a>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    
+                    // Special case for process line
+                    if (entry.target.id === 'proses-kerja' || entry.target.closest('#proses-kerja')) {
+                        const line = document.getElementById('progress-line');
+                        if (line) line.style.width = '66.66%';
+                    }
+                    
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+    });
+</script>
+</body></html>

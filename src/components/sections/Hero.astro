@@ -1,0 +1,38 @@
+---
+import { Image } from 'astro:assets';
+import { hero } from '../../data/copy';
+---
+
+<section class="px-margin-mobile md:px-margin-desktop py-16 md:py-24 max-w-max-width mx-auto flex flex-col md:flex-row items-center gap-12 overflow-hidden">
+  <div class="flex-1 space-y-6 animate-on-scroll">
+    <h1 class="text-headline-lg-mobile md:text-headline-xl font-headline-xl text-on-background leading-tight">
+      {hero.headline} <br />
+      <span class="text-primary">{hero.headlineAccent}</span>
+    </h1>
+    <p class="text-body-lg font-body-lg text-on-surface-variant">
+      {hero.subtitle}
+    </p>
+    <div class="pt-4">
+      <a class="inline-flex items-center justify-center bg-primary-container text-on-primary px-6 py-3 rounded text-label-caps font-label-caps hover:bg-primary transition-all hover:scale-105 shadow-md hover:shadow-lg gap-2" href={`https://wa.me/6281234567890?text=${encodeURIComponent(hero.ctaMessage)}`}>
+        <span class="material-symbols-outlined text-xl">chat</span>
+        {hero.ctaLabel}
+      </a>
+    </div>
+  </div>
+  <div class="flex-1 w-full relative animate-on-scroll stagger-1">
+    <div class="aspect-video bg-surface-warm rounded border border-circuit-gray overflow-hidden relative shadow-lg group animate-float">
+      <Image 
+        src={hero.heroImage}
+        alt="Hardware Repair Workbench"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+      />
+      <div class="absolute inset-0 border border-primary/20 m-4 rounded pointer-events-none transition-transform duration-500 group-hover:scale-[0.98]"></div>
+    </div>
+    <!-- Decorative elements -->
+    <div class="absolute -z-10 -top-10 -right-10 w-32 h-32 bg-primary-fixed-dim/30 rounded-full blur-2xl animate-pulse"></div>
+    <div class="absolute -z-10 -bottom-10 -left-10 w-40 h-40 bg-tertiary-fixed-dim/30 rounded-full blur-2xl animate-pulse" style="animation-delay: 1s;"></div>
+  </div>
+</section>

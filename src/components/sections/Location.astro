@@ -1,0 +1,39 @@
+---
+import { location } from '../../data/copy';
+---
+
+<section class="py-16 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto" id="lokasi">
+  <h2 class="text-headline-md font-headline-md text-on-background mb-8 animate-on-scroll">Lokasi & Kontak</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="bg-surface border border-circuit-gray rounded p-6 shadow-sm hover:shadow-lg transition-shadow duration-300 animate-on-scroll">
+      <h3 class="text-headline-md font-headline-md text-on-surface mb-4">{location.name}</h3>
+      <div class="space-y-4">
+        <div class="flex items-start gap-3 group">
+          <span class="material-symbols-outlined text-primary mt-1 group-hover:scale-110 group-hover:text-electric-blue transition-all">location_on</span>
+          <p class="text-body-md font-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">
+            {location.address},<br/>
+            {location.city}
+          </p>
+        </div>
+        <div class="flex items-center gap-3 group">
+          <span class="material-symbols-outlined text-primary group-hover:scale-110 group-hover:text-electric-blue transition-all">schedule</span>
+          <p class="text-body-md font-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">{location.schedule}</p>
+        </div>
+        <div class="flex items-center gap-3 group">
+          <span class="material-symbols-outlined text-primary group-hover:scale-110 group-hover:text-electric-blue transition-all">phone</span>
+          <p class="text-body-md font-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">{location.phone}</p>
+        </div>
+      </div>
+      <button class="mt-6 w-full bg-surface-container-high text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed py-2 rounded font-label-caps text-label-caps transition-colors">LIHAT DI GOOGLE MAPS</button>
+    </div>
+    <div class="h-64 md:h-auto bg-surface-dim rounded border border-circuit-gray relative overflow-hidden group animate-on-scroll stagger-1" data-location="Indonesia">
+      <!-- Map Placeholder -->
+      <div class="absolute inset-0 flex items-center justify-center text-on-surface-variant flex-col bg-surface-warm transition-transform duration-700 group-hover:scale-105" aria-label="Map location preview" style={`background-image: url('${location.mapImage.src}'); background-size: cover; background-position: center;`}>
+        <div class="bg-surface/80 backdrop-blur p-4 rounded flex flex-col items-center shadow-lg group-hover:-translate-y-2 transition-transform duration-300">
+          <span class="material-symbols-outlined text-4xl mb-2 text-primary">map</span>
+          <span class="text-label-mono font-label-mono text-on-surface">MAP_DATA_AREA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
