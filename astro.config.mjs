@@ -4,6 +4,7 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://zellzhef.vercel.app',
   integrations: [tailwind(), react()],
   image: {
     domains: ['lh3.googleusercontent.com'],
