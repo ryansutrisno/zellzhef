@@ -131,7 +131,7 @@ export const location = {
   address: 'XMVG+C7C, Mojo, Ngeposari, Semanu, Gunungkidul Regency, Special Region of Yogyakarta 55893',
   city: 'Gunungkidul Regency',
   schedule: 'Senin - Sabtu: 09:00 - 21:00',
-  phone: '+62 856-2957-000',
+  phone: '+62 896-2696-2222',
   mapImage: mapImg,
   mapUrl: 'https://www.google.com/maps?q=Zellzhef+Repair+Hardware+Semanu',
   mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.927189322762!2d110.6756382!3d-8.0064338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7bb500625589bf%3A0x7028a87d777a5435!2sZellzhef!5e0!3m2!1sen!2sid!4v1710000000000!5m2!1sen!2sid',
