@@ -12,7 +12,7 @@ export const brand = {
 export const meta = {
   title: 'Zellzhef | Solusi Perbaikan Handphone & Laptop',
   description: 'Layanan teknis profesional, terpercaya, dan transparan untuk perangkat Anda. Kami mengembalikan performa optimal hardware Anda dengan presisi.',
-  image: '/screen.png',
+  image: '/images/Thumbnail-Zellzhef.png',
   imageAlt: 'Zellzhef',
 } as const;
 
