@@ -24,16 +24,21 @@ import { location } from '../../data/copy';
           <p class="text-body-md font-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">{location.phone}</p>
         </div>
       </div>
-      <button class="mt-6 w-full bg-surface-container-high text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed py-2 rounded font-label-caps text-label-caps transition-colors">LIHAT DI GOOGLE MAPS</button>
+      <a href={location.mapUrl} target="_blank" rel="noopener noreferrer" class="mt-6 w-full bg-surface-container-high text-on-surface hover:bg-primary-fixed hover:text-on-primary-fixed py-2 rounded font-label-caps text-label-caps transition-colors inline-block text-center">LIHAT DI GOOGLE MAPS</a>
     </div>
     <div class="h-64 md:h-auto bg-surface-dim rounded border border-circuit-gray relative overflow-hidden group animate-on-scroll stagger-1" data-location="Indonesia">
       <!-- Map Placeholder -->
-      <div class="absolute inset-0 flex items-center justify-center text-on-surface-variant flex-col bg-surface-warm transition-transform duration-700 group-hover:scale-105" aria-label="Map location preview" style={`background-image: url('${location.mapImage.src}'); background-size: cover; background-position: center;`}>
-        <div class="bg-surface/80 backdrop-blur p-4 rounded flex flex-col items-center shadow-lg group-hover:-translate-y-2 transition-transform duration-300">
-          <span class="material-symbols-outlined text-4xl mb-2 text-primary">map</span>
-          <span class="text-label-mono font-label-mono text-on-surface">MAP_DATA_AREA</span>
-        </div>
-      </div>
+      <iframe 
+        src={location.mapEmbedUrl} 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        class="absolute inset-0 w-full h-full"
+        title="Google Maps Location">
+      </iframe>
     </div>
   </div>
 </section>

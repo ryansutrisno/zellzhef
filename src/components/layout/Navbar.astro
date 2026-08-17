@@ -1,5 +1,5 @@
 ---
-import { brand, nav } from '../../data/copy';
+import { brand, nav, config } from '../../data/copy';
 ---
 
 <!-- Top Navigation (Desktop) -->
@@ -9,12 +9,12 @@ import { brand, nav } from '../../data/copy';
       {brand.name}
     </div>
     <div class="flex gap-gutter">
-      <a class="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#layanan">Services</a>
-      <a class="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#produk">Products</a>
-      <a class="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#proses-kerja">About Us</a>
-      <a class="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#lokasi">Location</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#layanan">Layanan</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#produk">Produk</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#proses-kerja">Proses Kerja</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#lokasi">Lokasi</a>
     </div>
-    <a class="bg-primary-container text-on-primary px-4 py-2 rounded text-label-caps font-label-caps hover:opacity-90 hover:scale-105 transition-all shadow-md hover:shadow-lg" href={`https://wa.me/6281234567890?text=${encodeURIComponent(nav.waMessage)}`}>
+    <a class="bg-primary-container text-on-primary px-4 py-2 rounded text-label-caps font-label-caps hover:opacity-90 hover:scale-105 transition-all shadow-md hover:shadow-lg" href={`https://wa.me/${config.whatsapp}?text=${encodeURIComponent(nav.waMessage)}`}>
       {nav.ctaLabel}
     </a>
   </div>
@@ -37,7 +37,7 @@ import { brand, nav } from '../../data/copy';
     <span class="material-symbols-outlined">memory</span>
     <span class="text-label-caps font-label-caps mt-1">Shop</span>
   </a>
-  <a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant hover:text-primary hover:bg-surface-container-high transition-all active:scale-95 px-2 py-1 rounded" href={`https://wa.me/6281234567890?text=${encodeURIComponent(nav.waMessage)}`}>
+  <a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant hover:text-primary hover:bg-surface-container-high transition-all active:scale-95 px-2 py-1 rounded" href={`https://wa.me/${config.whatsapp}?text=${encodeURIComponent(nav.waMessage)}`}>
     <span class="material-symbols-outlined">chat</span>
     <span class="text-label-caps font-label-caps mt-1">WhatsApp</span>
   </a>
