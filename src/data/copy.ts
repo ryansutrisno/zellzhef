@@ -138,7 +138,9 @@ export const location = {
 } as const;
 
 export const footer = {
-  copyright: `© ${new Date().getFullYear()} Zellzhef. Professional Repair Handphone & Hardware Solutions.`,
+  text: `© ${new Date().getFullYear()} Zellzhef. Powered by`,
+  poweredBy: 'Trazmedia',
+  poweredByUrl: 'https://trazmedia.com',
 } as const;
 
 export const stickyWA = {

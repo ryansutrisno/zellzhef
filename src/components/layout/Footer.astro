@@ -7,6 +7,8 @@ import { footer, brand } from '../../data/copy';
     <div class="text-headline-md font-headline-md font-bold text-primary mb-4">
       {brand.name}
     </div>
-    <p class="text-body-md font-body-md text-on-surface-variant">{footer.copyright}</p>
+    <p class="text-body-md font-body-md text-on-surface-variant">
+      {footer.text} <a href={footer.poweredByUrl} target="_blank" rel="noopener noreferrer" class="text-primary hover:underline underline-offset-4 transition-colors font-medium">{footer.poweredBy}</a>
+    </p>
   </div>
 </footer>
