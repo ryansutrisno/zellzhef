@@ -6,12 +6,12 @@ export const config = {
 export const brand = {
   name: 'Zellzhef',
   tagline: 'Solusi Perbaikan Handphone & Laptop',
-  description: 'Layanan teknis profesional, terpercaya, dan transparan untuk perangkat Anda. Kami mengembalikan performa optimal hardware Anda dengan presisi.',
+  description: 'Layanan teknis profesional, terpercaya, dan bergaransi',
 } as const;
 
 export const meta = {
   title: 'Zellzhef | Solusi Perbaikan Handphone & Laptop',
-  description: 'Layanan teknis profesional, terpercaya, dan transparan untuk perangkat Anda. Kami mengembalikan performa optimal hardware Anda dengan presisi.',
+  description: 'Layanan teknis profesional, terpercaya, dan bergaransi',
   image: '/images/Thumbnail-Zellzhef.png',
   imageAlt: 'Zellzhef',
 } as const;
@@ -26,7 +26,7 @@ import heroImg from '../assets/images/hero.jpg';
 export const hero = {
   headline: 'Solusi Perbaikan',
   headlineAccent: 'Handphone & Laptop',
-  subtitle: 'Layanan teknis profesional, terpercaya, dan transparan untuk perangkat Anda. Kami mengembalikan performa optimal hardware Anda dengan presisi.',
+  subtitle: 'Layanan teknis profesional, terpercaya, dan bergaransi',
   ctaLabel: 'Konsultasi via WhatsApp',
   ctaMessage: 'Halo Zellzhef, saya ingin konsultasi mengenai perbaikan perangkat saya.',
   heroImage: heroImg,
@@ -50,12 +50,6 @@ export const services = [
     title: 'Upgrade RAM/SSD',
     description: 'Tingkatkan performa dan kecepatan loading sistem Anda.',
     icon: 'memory',
-  },
-  {
-    id: 'service-motherboard',
-    title: 'Service Motherboard',
-    description: 'Perbaikan tingkat komponen mikro untuk masalah mati total.',
-    icon: 'developer_board',
   },
 ];
 
@@ -91,14 +85,14 @@ export const products = [
   {
     id: 'baterai-laptop',
     name: 'Baterai Laptop',
-    spec: 'OEM Replacement',
+    spec: '',
     image: product4Img,
     size: 'small',
   },
   {
     id: 'baterai-handphone',
     name: 'Baterai Handphone',
-    spec: 'Original Part',
+    spec: '',
     image: product5Img,
     size: 'small',
   }
@@ -133,7 +127,7 @@ export const processSteps = [
 import mapImg from '../assets/images/location-map.jpg';
 
 export const location = {
-  name: 'Zellzhef Repair & Hardware',
+  name: 'Zellzhef Gadget Reparation ',
   address: 'XMVG+C7C, Mojo, Ngeposari, Semanu, Gunungkidul Regency, Special Region of Yogyakarta 55893',
   city: 'Gunungkidul Regency',
   schedule: 'Senin - Sabtu: 09:00 - 21:00',

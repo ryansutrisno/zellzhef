@@ -5,9 +5,9 @@ import { services } from '../../data/copy';
 <section class="bg-surface-warm py-16 border-y border-circuit-gray" id="layanan">
   <div class="px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
     <h2 class="text-headline-md font-headline-md text-on-background mb-8 text-center animate-on-scroll">Layanan Teknis Kami</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
       {services.map((service, index) => (
-        <div class={`bg-surface p-6 rounded border border-circuit-gray hover:shadow-xl hover:-translate-y-2 hover:border-primary/30 transition-all duration-300 animate-on-scroll stagger-${(index % 4) + 1}`}>
+        <div class={`bg-surface p-6 rounded border border-circuit-gray hover:shadow-xl hover:-translate-y-2 hover:border-primary/30 transition-all duration-300 animate-on-scroll stagger-${(index % 3) + 1}`}>
           <div class="w-12 h-12 rounded bg-primary-fixed/50 flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform">
             <span class="material-symbols-outlined text-3xl">{service.icon}</span>
           </div>

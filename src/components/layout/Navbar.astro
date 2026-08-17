@@ -5,9 +5,9 @@ import { brand, nav, config } from '../../data/copy';
 <!-- Top Navigation (Desktop) -->
 <nav class="hidden md:flex fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant">
   <div class="w-full flex justify-between items-center px-margin-desktop h-16 max-w-max-width mx-auto">
-    <div class="text-headline-md font-headline-md font-bold text-primary hover:scale-105 transition-transform cursor-pointer">
+    <a href="/" class="text-headline-md font-headline-md font-bold text-primary hover:scale-105 transition-transform cursor-pointer">
       {brand.name}
-    </div>
+    </a>
     <div class="flex gap-gutter">
       <a class="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#layanan">Layanan</a>
       <a class="text-on-surface-variant hover:text-primary transition-colors text-body-md font-body-md" href="#produk">Produk</a>
@@ -22,9 +22,9 @@ import { brand, nav, config } from '../../data/copy';
 
 <!-- Top Navbar (Mobile Brand) -->
 <nav class="md:hidden fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant flex justify-center items-center h-16">
-  <div class="text-headline-md font-headline-md font-bold text-primary">
+  <a href="/" class="text-headline-md font-headline-md font-bold text-primary">
     {brand.name}
-  </div>
+  </a>
 </nav>
 
 <!-- Bottom Navigation (Mobile) -->
